@@ -1,7 +1,9 @@
 package edu.touro.mcon264.apps;
-import ch05.collections.*;
+//import ch05.collections.*;
 
-public class BasicSet1Driver 
+import edu.touro.mcon264.apps.collections.BasicSet1;
+
+public class BasicSet1Driver
 {
   public static void main(String[] args)
   {

@@ -1,7 +1,9 @@
 package edu.touro.mcon264.apps;
-import ch05.collections.*;
+//import ch05.collections.*;
 
-public class BasicSet2Driver 
+import edu.touro.mcon264.apps.collections.BasicSet2;
+
+public class BasicSet2Driver
 {
   public static void main(String[] args)
   {
@@ -24,7 +26,7 @@ public class BasicSet2Driver
     result = test.add("alpha");
     System.out.println("Expect 'false':\t" + result);
     System.out.println("Expect 2:\t" + test.size()); 
-    result = test.tempAdd("alpha");
+    //result = test.tempAdd("alpha");
     System.out.println("Expect 'false':\t" + result);
     System.out.println("Expect 2:\t" + test.size()); 
  

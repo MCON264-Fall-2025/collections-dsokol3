@@ -1,7 +1,10 @@
 package edu.touro.mcon264.apps;
-import ch05.collections.*;
+//import ch05.collections.*;
 
-public class CollectionDriver 
+import edu.touro.mcon264.apps.collections.ArrayCollection;
+import edu.touro.mcon264.apps.collections.CollectionInterface;
+
+public class CollectionDriver
 {
   public static void main(String[] args)
   {

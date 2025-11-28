@@ -29,5 +29,4 @@ public class BasicBag<T> extends ArrayCollection<T> implements BagInterface<T> {
     // put in the JavaDoc comments as specified in the BagInterface.
     // Which SOLID principles is being applied here?
 
-
 }

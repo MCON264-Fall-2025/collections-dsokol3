@@ -7,9 +7,12 @@
 //---------------------------------------------------------------------------
 package edu.touro.mcon264.apps;
 
+import edu.touro.mcon264.apps.collections.ArrayCollection;
+import edu.touro.mcon264.apps.collections.CollectionInterface;
+
 import java.io.*;
 import java.util.*;
-import ch05.collections.*;
+//import ch05.collections.*;
 
 public class VocabularyDensity
 {
