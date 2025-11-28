@@ -12,7 +12,13 @@ public class BasicBag<T> extends ArrayCollection<T> implements BagInterface<T> {
      */
     @Override
     public T grab() {
-        return null;
+        if (isEmpty()) {
+            return null;
+        }
+        int randomIndex = (int) (Math.random() * size());
+        T e =elements[randomIndex];
+        remove(e);
+        return e;
     }
 
     /**
@@ -22,7 +28,13 @@ public class BasicBag<T> extends ArrayCollection<T> implements BagInterface<T> {
      */
     @Override
     public int count(T target) {
-        return 0;
+        int cnt = 0;
+        for (int i = 0; i < size(); i++) {
+            if (elements[i].equals(target)) {
+                cnt++;
+            }
+        }
+        return cnt;
     }
 
     /**
@@ -34,7 +46,11 @@ public class BasicBag<T> extends ArrayCollection<T> implements BagInterface<T> {
      */
     @Override
     public int removeAll(T target) {
-        return 0;
+        int cnt = count(target);
+        for (int i = 0; i < cnt; i++) {
+            remove(target);
+        }
+        return cnt;
     }
 
     /**
@@ -42,12 +58,17 @@ public class BasicBag<T> extends ArrayCollection<T> implements BagInterface<T> {
      */
     @Override
     public void clear() {
-
+        int size = size();
+        for (int i = 0; i < size; i++) {
+            remove(elements[i]);
+        }
+        numElements =0;
     }
 
     // TODO: implement the methods in the BagInterface using an array as the underlying data structure
     // consider extending ArrayCollection<T>
     // put in the JavaDoc comments as specified in the BagInterface.
     // Which SOLID principles is being applied here?
+    //open/closed principle. opened for extension, closed for modification.
 
 }
